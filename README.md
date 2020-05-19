@@ -1,0 +1,1 @@
+Let's explore what's going on in the background when we clone, add, commit, and push a repository! By the way, what's a repository anyways....?
