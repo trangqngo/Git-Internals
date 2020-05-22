@@ -154,6 +154,8 @@ Recall that the git repository is comprised of commits, each with their own vers
 ***
 ## Rebase
 Rebasing is a similar operation that internally does something very different.  After rebasing, there is only one branch, as in merging.  In contrast to merging, however, rebasing takes each base commit of a branch, in increasing order of distance to the diverging point of the repository, and successively commits each one to the head of the other branch.  The end result is similar, as the changes created in the branch are reflected in the other branch, but instead of doing this with just the endpoints of both branches, git does this iteratively.
+
+Note, however, that best practices for rebasing only apply to local repositories.  For each commit in the branch, rebase makes an additional commit to the head of the master branch.  This, in essence, changes each commit in the rebasing branch, because initially each commit indicated a hierarchical transformation from the fork of the branch to the head of the branch.  Now, each commit must transform the head of the master branch to the successive commits on the rebasing branch.
 ***
 ### References
 - This chapter on [Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain) from the [Pro Git](https://git-scm.com/book/en/v2) book by Scott Chacon and Ben Straub
