@@ -86,10 +86,11 @@ does not give us anything.
 
 **2. Clone an existing repository from elsewhere**
 
-```$git clone https://github.com/trangqngo/Git-Internals.git
+```
+$git clone https://github.com/trangqngo/Git-Internals.git
 ```
 
-This creates a directory called `Git-Internal`s and initializes a `.git` subdirectory in `Git-Internals. `
+This creates a directory called `Git-Internals` and initializes a `.git` subdirectory in `Git-Internals. `
 `Git-Internals` will be in the directory that you are in when you type `git clone`, but you can also specify the target directory `my-directory` with:
 
 ```
